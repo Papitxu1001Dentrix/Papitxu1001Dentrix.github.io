@@ -597,3 +597,68 @@ body {
         padding: 20px 12px;
     }
 }
+
+
+
+
+
+
+
+
+
+/* =========================
+   FONDO HOLOGRÁFICO INSTITUCIONAL
+   ========================= */
+
+body {
+    background-image: url('pCLoud-Presentation2026-07-17_124516.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    animation: hologramaDentrix 12s ease-in-out infinite;
+    transition: background-size 1.5s ease, background-position 1.5s ease;
+}
+
+/* Animación holográfica institucional */
+@keyframes hologramaDentrix {
+
+    /* Estado 1 — Luz superior derecha */
+    0% {
+        background-size: 38% !important;
+        background-position: right top !important;
+        opacity: 0.85;
+        filter: brightness(1.05) saturate(1.1);
+    }
+
+    /* Transición suave */
+    25% {
+        background-size: 42% !important;
+        background-position: right 20% !important;
+        opacity: 0.90;
+        filter: brightness(1.15) saturate(1.2);
+    }
+
+    /* Estado 2 — Luz inferior derecha */
+    50% {
+        background-size: 300px !important;
+        background-position: bottom right !important;
+        opacity: 0.75;
+        filter: brightness(1.0) saturate(1.0);
+    }
+
+    /* Transición suave */
+    75% {
+        background-size: 320px !important;
+        background-position: bottom 20% right !important;
+        opacity: 0.80;
+        filter: brightness(1.1) saturate(1.15);
+    }
+
+    /* Regreso al estado 1 */
+    100% {
+        background-size: 38% !important;
+        background-position: right top !important;
+        opacity: 0.85;
+        filter: brightness(1.05) saturate(1.1);
+    }
+}
+
